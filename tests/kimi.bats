@@ -6,6 +6,7 @@ setup() {
   setup_test_env
 
   # Create a mock Kimi sessions directory
+  export KIMI_NO_LAUNCHD=1
   export KIMI_SESSIONS_DIR="$TEST_DIR/sessions"
   export KIMI_DIR="$TEST_DIR/kimi_home"
   mkdir -p "$KIMI_SESSIONS_DIR"
